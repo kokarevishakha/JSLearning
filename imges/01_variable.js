@@ -1,7 +1,7 @@
 var firstName; // variable declaration
 firstName = "Vishakha";  // Variable initialization
 console.log(firstName);
-firstName = "Ms. Vishakha"; // Variable update
+firstName = "Ms. Vishakha "; // Variable update
 console.log(firstName);
 
 

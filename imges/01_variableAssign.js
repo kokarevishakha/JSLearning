@@ -9,7 +9,7 @@ console.log("My Full Name:-", "Vishakha Shankar Kokare");
 console.log("********************STEP-02*******************************");
 
 
-var myLove="I Love Only JS❤️...";
+var myLove="I Love Only JS❤️....";
 console.log(myLove);
 
 console.log("********************STEP-03*******************************");
