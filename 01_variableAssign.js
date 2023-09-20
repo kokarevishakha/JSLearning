@@ -30,7 +30,10 @@ console.log("Address:" ,"Baramati");
 var pincode;
 console.log("Pin-Code:" ,"413110");
 
+var gender;
+console.log("Gender:" ,"Female");
+
 var MaritalStatus;
-console.log("MaritalStatus:" ,"NO");
+console.log("Marital Status:" ,"NO");
 
 console.log("#################**END**##########################");
