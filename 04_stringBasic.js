@@ -48,3 +48,54 @@ console.log("Length after trim: ", result.length);
 var lengthAfterTrim = result.length;
 var result = lengthBeforeTrim - lengthAfterTrim;
 console.log('Removed extra spaces are: ', result);
+
+console.log("========== Includes() =============== ");
+
+var result = greet.includes('Morning');
+console.log("Is Morning word available :",result);
+
+var result = greet.includes('nin');
+console.log("Is nin word available :",result);
+
+var result = greet.includes('morning');
+console.log("Is Morning word Available :", result);
+
+console.log("========== Search() =============== ");
+var greet = 'good Morning';
+
+var result = greet.search('orn');
+console.log(result);
+
+var result = greet.search('good');
+console.log("Search this word :",result);
+
+var result = greet.search('after');
+console.log("Search this word :",result);
+
+console.log("========== Slice() =============== ");
+
+var result = greet.slice(6);
+console.log('slice the this location :', result);   // display the direct word
+
+var result = greet.slice(6, 10);
+console.log(result);
+
+console.log("========== Split() =============== ");
+ 
+var result = greet.split(" ");
+console.log(result);
+
+//WAP to count the total number words  (Interview Qution)
+var str = "I am UI Developer";
+var word = str.split(" ");
+console.log(word);
+console.log(typeof word);
+
+
+console.log("========== String Template =============== ");
+var num1 = 10;
+var num2 =20;
+
+var result = num1 + num2;
+console.log("Addition of ", num1, "and", num2, "is :",result);
+console.log(`Addition of ${num1} and ${num2} is : ${result}`);

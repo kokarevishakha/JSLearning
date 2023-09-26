@@ -6,7 +6,7 @@ console.log(
 );
 
 function stringBasics() {
-  console.log("my Dream Company is :  AMDOCS");
+  console.log("My Dream Company is :  AMDOCS");
 }
 stringBasics();
 
