@@ -2,41 +2,27 @@ console.log(
   "**************************************** ASSIGNMENTS_01: OPERATORS  ************************************************"
 );
 
-function squareOfWordLength() {
-  var lengthStr = "JavaScript";
-  console.log(`Given Word Is : ${lengthStr}`);
+function squareOfWordLength(word) {
+  console.log(`Given Word Is: ${word}`);
 
-  var lengthStr1 = lengthStr.length;
-  console.log(`1. Find the String length: ${lengthStr1}`);
+  var lengthStr = word.length;
+  console.log(`1. Find the String length: ${lengthStr}`);
 
-  var squareStr = lengthStr1 ** 2;
+  var squareStr = lengthStr ** 2;
   console.log(`2. Find the Square of String: ${squareStr}`);
 
-  console.log("----------------------------1.3.2----------------------");
-
-  var str2 = "Google Chrome";
-  console.log(`Given Word Is: ${str2}`);
-
-  var lengthStr2 = str2.length;
-  console.log(`1.3.2: Find the String length: ${lengthStr2}`);
-
-  var squareStr2 = lengthStr2 ** 2;
-  console.log(`1.3.2: Find the Square of String: ${squareStr2}`);
-
-  console.log("----------------------------1.3.3----------------------");
-
-  var str3 = "Developer Smart";
-  console.log(`Given Word Is: ${str3}`);
-
-  var lengthStr3 = str3.length;
-  console.log(`1.3.3: Find the String length: ${lengthStr3}`);
-
-  var squareStr3 = lengthStr3 ** 2;
-  console.log(`1.3.3: Find the Square of String: ${squareStr3}`);
+  return squareStr;
 }
 
-squareOfWordLength();
+var result1 = squareOfWordLength("JavaScript");
 
+console.log("--------------------------------------------------");
+
+var result2 = squareOfWordLength("Google Chrome");
+
+console.log("--------------------------------------------------");
+
+var result3 = squareOfWordLength("Developer Smart");
 console.log(
   "**************************************** STEP-02  ************************************************"
 );
