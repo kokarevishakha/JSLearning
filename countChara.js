@@ -50,4 +50,19 @@ console.log(
   var str1 = countCharA("My favourite movie is LAggAn");
   console.log(`Second String is ===> "My favourite movie is LAggAn" `);
   console.log(`Count the Char of "M" & "m" : ${str1}`);
+  
+console.log(`----------------------------------------------------------------`);
 
+var str = "My favourite movie is LAggAn";
+var count=0;
+
+for(let i=0;i<=str.length-1;i++)
+{
+  var char = str.charAt(i);
+  if(char=='a' || char=='A' )
+  {
+     count++;
+  }
+
+}
+console.log(`Total Number of  Vowel are:${count}`);
