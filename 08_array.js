@@ -8,8 +8,8 @@ console.log(`=========== Accessing or updating array element===============`);
 let element0thIndex = array[0];
 console.log(element0thIndex);
 console.log(array[1]);
-console.log(array[array.length-1]);
-console.log(`Second last element in array is:  ${array[array.length-2]}`);
+console.log(array[array.length - 1]);
+console.log(`Second last element in array is:  ${array[array.length - 2]}`);
 console.log(`========= Updating an element===========`);
 array[1] = 70;
 console.log(array);
@@ -20,13 +20,13 @@ console.log(array.indexOf(30));
 console.log(`========= Traversing an array===========`);
 let arrayNum = [22, 11, 44, 55, 77, 33];
 for (let index = 0; index < arrayNum.length; index++) {
-    const element = arrayNum[index];
-    console.log(element); 
+  const element = arrayNum[index];
+  console.log(element);
 }
 console.log(`========= Traversing an array in reverse order===========`);
-for (let index = arrayNum.length-1; index >=0; index--) {
-    const element = arrayNum[index];
-    console.log(element);
+for (let index = arrayNum.length - 1; index >= 0; index--) {
+  const element = arrayNum[index];
+  console.log(element);
 }
 
 let arrayNums = [22, 11, 44, 55, 77, 33];
@@ -39,7 +39,6 @@ console.log(`====== Removing element in last=========`);
 arrayNumbers.pop();
 console.log(arrayNumbers);
 
-
 console.log(`====== Adding element in first position  =========`);
 arrayNumbers.unshift(99);
 console.log(arrayNumbers);
@@ -48,7 +47,6 @@ let arrayN = [22, 11, 44, 55, 77, 33];
 console.log(`====== Removing element in first position =========`);
 arrayN.shift();
 console.log(arrayN);
-
 
 var arrayNumber = [22, 11, 44, 55, 77, 33];
 console.log(`====== slice() =========`);
@@ -64,19 +62,23 @@ const splicedElements = arrayNumber.splice(4);
 console.log(arrayNumber);
 console.log(splicedElements);
 
-console.log(`====== splice() to remove elements with index and delete count =========`);
+console.log(
+  `====== splice() to remove elements with index and delete count =========`
+);
 var arrayNumber = [22, 11, 44, 55, 77, 33];
-var removedElements = arrayNumber.splice(2, 2);  // 2 se start hoga and kitna delete krna hai so 2 
+var removedElements = arrayNumber.splice(2, 2); // 2 se start hoga and kitna delete krna hai so 2
 console.log(arrayNumber);
 console.log(removedElements);
 
 console.log(`====== splice() to insert element =========`);
 var arrayNumber = [22, 11, 44, 55, 77, 33];
 // Insert element 99 at index 2 ==> [22, 11, 99, 44, 55, 77, 33]
-arrayNumber.splice(2,0,99);
+arrayNumber.splice(2, 0, 99);
 console.log(arrayNumber);
 
-console.log(`Insert elements 100, 200, 400 at index 3 and at the time of insertion don't replace any elements`);
+console.log(
+  `Insert elements 100, 200, 400 at index 3 and at the time of insertion don't replace any elements`
+);
 var arrayNumber = [22, 11, 44, 55, 77, 33];
 // Insert elements 100, 200, 400 at index 3 ==> [22, 11, 44, 100,200,400,55, 77, 33];
 arrayNumber.splice(3, 0, 100, 200, 400);
@@ -91,14 +93,16 @@ console.log(arrayNumber);
 console.log(`Insert an element 700 at index 3 by replacing 2 elements`);
 var arrayNumber = [22, 11, 44, 55, 77, 33];
 // [22, 11, 44, 700, 33]
-arrayNumber.splice(3, 2, 700)
+arrayNumber.splice(3, 2, 700);
 console.log(arrayNumber);
-console.log(`========================== Traveling Array Using For in Loop ============================`);
+console.log(
+  `========================== Traveling Array Using For in Loop ============================`
+);
 console.log(`for in loop`);
 var arrayNumber = [22, 11, 44, 55, 77, 33];
 for (const index in arrayNumber) {
-    const element=arrayNumber[index];
-    console.log(`Index: ${index}, value: ${element}`);
+  const element = arrayNumber[index];
+  console.log(`Index: ${index}, value: ${element}`);
 }
 
 // console.log(`========= Traversing an array using while loop ==============`);
@@ -114,8 +118,8 @@ var arrayNumber = [22, 11, 44, 55, 77, 33];
 let index = 0;
 
 do {
-    console.log(arrayNumber[index]);
-    index++;
+  console.log(arrayNumber[index]);
+  index++;
 } while (index < arrayNumber.length);
 
 // MERN Developer - M: Mongo db, E: Express JS, R: Rect, N: NodeJS
@@ -123,7 +127,7 @@ do {
 var arrayNumber = [22, 11, 44, 55, 77, 33];
 console.log(`for of loop`);
 for (const element of arrayNumber) {
-    console.log(element);
+  console.log(element);
 }
 console.log(`==========Join Method =========`);
 console.log(`join method`);
@@ -131,6 +135,6 @@ const joinedElement = arrayNumber.join(",");
 console.log(joinedElement);
 
 console.log(`Resizing an array`);
-var arrayNumber = [22, 11, 44, 55, 77, 33];// [22, 11, 44]
+var arrayNumber = [22, 11, 44, 55, 77, 33]; // [22, 11, 44]
 arrayNumber.length = 3;
 console.log(arrayNumber);
