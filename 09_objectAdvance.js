@@ -43,7 +43,7 @@ console.log(personJenny);
 
 // personJenny = { }; Not allowed
 // personJenny = person; Not allowed
-Object.freeze(personJenny);
+Object.eze(personJenny);
 personJenny.city = "Lucknow";
 console.log(personJenny);
 console.log(`Object.assign()`);
