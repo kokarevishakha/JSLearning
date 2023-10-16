@@ -18,11 +18,19 @@ const postInString = `{
 console.log(
   `---------Q1, Q2.  used backtick and Convert this one to object------------`
 );
+
+
 console.log(`\n`);
+// console.log(typeof postInString);
+// const post = JSON.parse(postInString);
+// console.log(typeof post);
+// console.log(post);
+
 console.log(typeof postInString);
 const convertToObj = JSON.parse(postInString);
 console.log(`-----convert the String to Object....----------`);
 console.log(typeof convertToObj);
+console.log(convertToObj);
 
 console.log(`\n`);
 console.log(`---------Q.3 Split()------------`);

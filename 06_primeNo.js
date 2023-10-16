@@ -35,23 +35,33 @@
 console.log(`------------Assignment Prime No. ------------------------------`);
 
 function isPrimeNumber(number) {
-  if (number <= 1) {
-    return false;
-  }
-
-  for (let index = 2; index < number; index++) {
-    if (number % index == 0) {
+    if (number <= 1) {
       return false;
     }
+  
+    for (let index = 2; index < number; index++) {
+      if (number % index == 0) {
+        return false;
+      }
+    }
+    return true;
   }
-  return true;
-}
-
-const array = [11, 3, 6, 10, 43, 29, 50];
-console.log(`Given the Array :=> ${array}`);
-for (const num of array) {
-  const result = isPrimeNumber(num);
+  
+  const array = [11, 3, 6, 10, 43, 29, 50];
+  console.log(`Given the Array :=> ${array}`);
+  let primeCount = 0;
+  
+  for (const num of array) {
+    const result = isPrimeNumber(num);
+    console.log(`-----------------------------------`);
+    console.log(`Given the number :=>${num}`);
+    console.log(`Is Number ${num} Prime: ${result}`);
+  
+    if (result) {
+      primeCount++;
+    }
+  }
+  
   console.log(`-----------------------------------`);
-  console.log(`Given the number :=>${num}`);
-  console.log(`Is Number ${num} Prime: ${result}`);
-}
+  console.log(`Number of prime numbers: ${primeCount}`);
+  

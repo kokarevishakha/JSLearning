@@ -39,7 +39,7 @@ console.log(`-----------------------------------Q.5. SBI BANK DETAILS-----------
 console.log(` - For all your banking needs, come visit our "${sbiBank.bankName}" branch. We're open from "${sbiBank.openTime}" to "${sbiBank.closeTime}". We look forward to serving you!`);
 
 
-console.log(`---------------------------------------Q.6. AXIS BANK DETAILS ----------------------------------------------------------------`);
+console.log(`---------------------------------------Q.6.  BANK DETAILS ----------------------------------------------------------------`);
 
 console.log(` - For all your banking needs, come visit our "${axisBank.bankName}" branch. We're closed from "${axisBank.closeTime}". We look forward to serving you!`);
 

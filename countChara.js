@@ -44,6 +44,7 @@ console.log(
   var str = countCharA("I Am Learning JavaScript ,The Language of internet");
   console.log(`First String is ===> "I Am Learning JavaScript ,The Language of internet"`);
   console.log(`Count the Char of "M" & "m" : ${str}`);
+
   
   console.log(`-------------------------------------------------------------------------------`);
   
@@ -59,7 +60,7 @@ var count=0;
 for(let i=0;i<=str.length-1;i++)
 {
   var char = str.charAt(i);
-  if(char=='a' || char=='A' )
+  if(char=='a' || char=='A')
   {
      count++;
   }

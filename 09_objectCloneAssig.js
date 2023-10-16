@@ -24,8 +24,8 @@ console.table([bankLocation]);
 console.log(
   `==========Cloning Object 1 & Object 2  Inside Empty Object============`
 );
-let clonebankSbi = Object.assign({}, bankSbi, bankLocation);
-console.table(clonebankSbi);
+let cloneBankSbi = Object.assign({}, bankSbi, bankLocation);
+console.table(cloneBankSbi);
 
 console.log(
   `---------------------------------------------------------------------------------------------`
