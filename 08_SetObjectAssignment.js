@@ -50,7 +50,8 @@ console.log(
   `Bank Name :- ${kotak_Bank.bank_name} , Location :- ${kotak_Bank.location} , Account No :- ${kotak_Bank.account_no} , IFSC Code :- ${kotak_Bank.ifsc} , Interest_Rate :- ${kotak_Bank.interest_rate} `
 );
 
-const hdfc_Bank = new bank("HDFC_Bank", "Pune", "HDFC0006754", "908799", 89.4);
+const
+ hdfc_Bank = new bank("HDFC_Bank", "Pune", "HDFC0006754", "908799", 89.4);
 console.log(
   `Bank Name :- ${hdfc_Bank.bank_name} , Location :- ${hdfc_Bank.location} , Account No :- ${hdfc_Bank.account_no} , IFSC Code :- ${hdfc_Bank.ifsc} , Interest_Rate :- ${hdfc_Bank.interest_rate} `
 );

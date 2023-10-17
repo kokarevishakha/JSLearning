@@ -77,3 +77,54 @@
 // // console.log(`Count the Char of "A" & "a" : ${str1}`);
 
 
+console.log(`-------------------pass argu nd retrun value------------`);
+
+let avc = function(a,b){
+    let temp = a;
+    a=b;
+    b=temp;
+    return [a,b];
+
+}
+let newW = avc(100,200);
+console.log(`iI given this value "100" & "200"`);
+console.log(`swap the values :- ${newW}`);
+
+console.log(`=======pass argu but no retrun value======`);
+function avc1(a,b) {
+    console.log(`Before swapping: a = ${a}, b = ${b}`);
+    let temp = a;
+    a = b;
+    b = temp;
+    console.log(`After swapping: a = ${a}, b = ${b}`);
+}
+
+avc1(100, 200);
+console.log(`----------no argu and no retuen type.-------------`);
+
+function avc2()
+{
+    let a=123;
+    let b=856;
+    let temp;
+    temp=a;
+    a=b;
+    b=temp;
+    console.log(a,b);
+    
+}
+avc2();
+
+console.log(`----------no argu and with retuen type.-------------`);
+
+function avc3()
+{
+    let a=30;
+    let b=50;
+    let temp = a;
+    a = b;
+    b = temp;
+    return [a, b];
+}
+let new1=avc3();
+console.log(new1);
