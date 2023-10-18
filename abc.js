@@ -77,54 +77,132 @@
 // // console.log(`Count the Char of "A" & "a" : ${str1}`);
 
 
-console.log(`-------------------pass argu nd retrun value------------`);
+// console.log(`-------------------pass argu nd retrun value------------`);
 
-let avc = function(a,b){
-    let temp = a;
-    a=b;
-    b=temp;
-    return [a,b];
+// let avc = function(a,b){
+//     let temp = a;
+//     a=b;
+//     b=temp;
+//     return [a,b];
 
-}
-let newW = avc(100,200);
-console.log(`iI given this value "100" & "200"`);
-console.log(`swap the values :- ${newW}`);
+// }
+// let newW = avc(100,200);
+// console.log(`iI given this value "100" & "200"`);
+// console.log(`swap the values :- ${newW}`);
 
-console.log(`=======pass argu but no retrun value======`);
-function avc1(a,b) {
-    console.log(`Before swapping: a = ${a}, b = ${b}`);
-    let temp = a;
-    a = b;
-    b = temp;
-    console.log(`After swapping: a = ${a}, b = ${b}`);
-}
+// console.log(`=======pass argu but no retrun value======`);
+// function avc1(a,b) {
+//     console.log(`Before swapping: a = ${a}, b = ${b}`);
+//     let temp = a;
+//     a = b;
+//     b = temp;
+//     console.log(`After swapping: a = ${a}, b = ${b}`);
+// }
 
-avc1(100, 200);
-console.log(`----------no argu and no retuen type.-------------`);
+// avc1(100, 200);
+// console.log(`----------no argu and no retuen type.-------------`);
 
-function avc2()
-{
-    let a=123;
-    let b=856;
-    let temp;
-    temp=a;
-    a=b;
-    b=temp;
-    console.log(a,b);
+// function avc2()
+// {
+//     let a=123;
+//     let b=856;
+//     let temp;
+//     temp=a;
+//     a=b;
+//     b=temp;
+//     console.log(a,b);
     
+// }
+// avc2();
+
+// console.log(`----------no argu and with retuen type.-------------`);
+
+// function avc3()
+// {
+//     let a=30;
+//     let b=50;
+//     let temp = a;
+//     a = b;
+//     b = temp;
+//     return [a, b];
+// }
+// let new1=avc3();
+// console.log(new1);
+console.log(`---------Using For Loops----------------`);
+function abc(){
+  
+    for(let i=5;i<=15;i++){
+        console.log(i); 
+    }
 }
-avc2();
+abc();
 
-console.log(`----------no argu and with retuen type.-------------`);
+console.log(`------Using While Loop-------`);
+function bcs(){
+    let i=50;
+    while(i>=40){
+        console.log(i);
+        i--;
+    }
 
-function avc3()
+}
+bcs()
+
+console.log(`--------Do-While-Loop print 5 table--------------`);
+let i=0;
+do {
+   
+    i = i+5;
+    console.log(i);
+} while (i<50);
+
+
+console.log(`------Even Number--------`);
+// function evenNo(num){
+    
+//     if(num %2 == 0){
+//        console.log(`Even no. :- ${num}`);
+//     }
+//     else{
+//           console.log(`old no. :- ${num}`);
+//     }
+// }
+// evenNo(2);
+// evenNo(3);
+
+function evenNo(num){
+    
+    if(num %2 == 0){
+       console.log(`Even no. :- ${num}`);
+    }
+    // else{
+    //       console.log(`old no. :- ${num}`);
+    // }
+}
+for(let i=0;i<=10;i+=2){
+    evenNo(i);
+}
+
+
+
+console.log(`-----old number------`);
+function oldNo(num){
+    if(num % 2!==0){
+        console.log(`Old no. :-> ${num}`);
+    }
+}
+for(let i = 0;i<=15;i++)
 {
-    let a=30;
-    let b=50;
-    let temp = a;
-    a = b;
-    b = temp;
-    return [a, b];
+    oldNo(i);
 }
-let new1=avc3();
-console.log(new1);
+
+console.log(`-------Print 10 Table -----`);
+for(let i = 1; i <= 10; i++) {
+    console.log(i*10);
+}
+
+console.log(`----------Reverse 10 table -----------------`);
+for(let i=10; i>=1; i--)
+{
+    console.log(i*10);
+}
