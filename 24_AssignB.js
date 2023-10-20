@@ -70,7 +70,7 @@ arrayEmp.forEach((employee) => {
 });
 
 console.log(
-  `--------Q5.Find the EMP Whose salary greater than or equal 50000 &from IT Department --------`
+  `--------Q5.Find the EMP Whose salary greater than or equal 50000 & from IT Department --------`
 );
 arrayEmp.forEach((employee) => {
   if (employee.emp_salary >= 50000 && employee.emp_dept == "IT") {
