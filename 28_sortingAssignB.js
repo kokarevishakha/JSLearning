@@ -29,7 +29,7 @@ const arrayEmp = arrayPerson.sort((emp1, emp2) => {
 return emp1.emp_id > emp2.emp_id ? -1 : 1
 });
 
-console.log(`Descending Order of employee_Department => `);
+console.log(`Descending Order of employee_ID => `);
 arrayEmp.forEach(emp => {
     console.log(`ID: ${emp.emp_id},       Name: ${emp.emp_name},       Department: ${emp.emp_dept}`);
 });
@@ -38,7 +38,7 @@ console.log(`-------------Step 02 -------------------------------`);
 const arrayDept = arrayPerson.sort((emp1,emp2)=>{
   return emp1.emp_dept > emp2.emp_dept ? 1 : -1
 });
-console.log(`Ascending Order of employee_id => `);
+console.log(`Ascending Order of employee_Department => `);
 arrayDept.forEach(emp => {
     console.log(` Department: ${emp.emp_dept},       ID: ${emp.emp_id},       Company: ${emp.emp_company}`);
 });
