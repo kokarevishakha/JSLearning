@@ -30,7 +30,7 @@
 // arrayNumber = [...new Set(arrayNumber)];
 // console.log(arrayNumber);
 
-console.log(`-----ADDED Value usning set method`);
+console.log(`-----ADDED Value using set method`);
 const setOfRollNum = new Set()
 setOfRollNum.add(11);
 setOfRollNum.add(22);

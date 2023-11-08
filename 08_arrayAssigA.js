@@ -19,7 +19,7 @@ console.log(
   `-------------------------------Q.3--------------------------------------------`
 );
 
-var removedElements = arrayFruits.splice(4, 1);
+ arrayFruits.splice(4, 1);
 console.log(`Remove "Mango" from the array :=> ${arrayFruits}`);
 
 console.log(
